@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600;8..144,800;8..144,1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.3s linear all;
+}
+
+.headerCont {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background-color: #111;
+  padding: 25px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: #111;
+  font-family: "Roboto Flex", sans-serif;
+  position: relative;
+}
+
+body::after {
+  position: absolute;
+  left: 50%;
+  top: calc(100vh - 100px);
+  transform: translateX(-50%);
+  content: "";
+  width: 0.1%;
+  height: 62%;
+  background-color: white;
+  z-index: 5;
+}
+
+.nameSection {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  /* background-color: rgb(226, 43, 43); */
+}
+
+.myName {
+  font-size: 250px;
+  color: white;
+}
+
+.surname {
+  position: absolute;
+  bottom: 150px;
+  font-size: 250px;
+  color: white;
+}
+
+.nameCont {
+  position: absolute;
+}
+
+.introducing {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: 100px;
+  background-color: #111;
+  position: relative;
+  z-index: 7;
+  padding: 40px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: blueviolet; */
+}
+
+.skill {
+  width: 100%;
+  padding: 40px;
+}
+
+.whom {
+  margin-top: 150px !important;
+}
+.whom,
+.why {
+  width: 60%;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  background-color: rgba(44, 3, 82, 0);
+}
+
+.whom .skill:nth-child(2n) {
+  margin: start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.whom .skill:nth-child(2n + 1) {
+  margin: end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introAnswers {
+  color: white;
+  max-width: 40%;
+  padding: 40px 0;
+}
+
+.empty {
+  width: 40%;
+}
+
+.icons {
+  width: 150px;
+  color: white;
+  background-color: #111;
+  position: relative;
+  z-index: 7;
+}
+
+.projects {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 100px;
+}
+.cardsCont {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projectsIntro {
+  margin-bottom: 150px;
+}
+
+.card {
+  width: 400px;
+  height: 300px;
+  background-color: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* .card::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-size: 100%;
+  top: 0;
+  transition: 0.5s linear all;
+}
+
+.card:hover:after {
+  opacity: 0;
+  display: none;
+} */
+
+.imgHolder {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+}
+
+.projectContent {
+  width: 100%;
+  height: 80px;
+  margin: auto;
+}
+
+.projectName {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.btns {
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+a {
+  display: block;
+  width: 40%;
+}
+
+button {
+  padding: 8px;
+  width: 100%;
+  margin: 40px 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #191919;
+  color: white;
+  border-color: white;
+}
+
+/* I copeid this */
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 0.5s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 0.5s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 0.5s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* .introducing:hover {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 0px #fff, 0 0 0px #ffffff, 0 0 0px #ffffff,
+      0 0 0px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 0px #ffffff, 0 0 0px #ffffff,
+      0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 35px #ffffff, 0 0 40px #ffffff;
+  }
+} */

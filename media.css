@@ -1,0 +1,32 @@
+@media (max-width: 767px) {
+  .myName {
+    font-size: 80px;
+  }
+  .surname {
+    font-size: 80px;
+    bottom: 50px;
+    position: absolute;
+  }
+  .empty {
+    display: none;
+  }
+  .introAnswers {
+  }
+  .skill {
+    width: 100%;
+  }
+  .whom {
+    width: 100%;
+  }
+  .introducing {
+    font-size: 25px;
+  }
+  .projectName {
+    font-size: 20px;
+  }
+  .projectsIntro {
+    margin-bottom: 50px;
+  }
+  i {
+  }
+}
