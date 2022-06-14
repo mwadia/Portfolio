@@ -27,6 +27,23 @@
   .projectsIntro {
     margin-bottom: 50px;
   }
-  i {
+
+  .icons {
+    width: 100px;
+    object-fit: contain;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  .imgHolder {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+  }
+
+  .img {
+    width: 100%;
   }
 }
