@@ -7,6 +7,37 @@
   transition: 0.3s linear all;
 }
 
+.links-icons {
+  position: fixed;
+  top: 86%;
+  left: 15px;
+  z-index: 20;
+}
+
+.links-icons img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.links-icons img:hover {
+  transition: 0.5s linear all;
+  transform: rotateY(360deg);
+}
+
+.links-icons .myEmail {
+  color: #fff;
+  transform: rotateZ(-90deg);
+  position: relative;
+  left: -105px;
+  bottom: 115px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 15px;
+}
+
 .headerCont {
   width: 90%;
   margin: auto;
@@ -144,6 +175,7 @@ main {
   background-color: #111;
   position: relative;
   z-index: 7;
+  object-fit: contain;
 }
 
 .projects {
@@ -241,8 +273,6 @@ button:hover {
   border-color: white;
 }
 
-/* I copeid this */
-
 .reveal {
   position: relative;
   opacity: 0;
@@ -270,20 +300,3 @@ button:hover {
     opacity: 1;
   }
 }
-
-/* .introducing:hover {
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 5px #fff, 0 0 0px #fff, 0 0 0px #ffffff, 0 0 0px #ffffff,
-      0 0 0px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff;
-  }
-  to {
-    text-shadow: 0 0 10px #fff, 0 0 0px #ffffff, 0 0 0px #ffffff,
-      0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 35px #ffffff, 0 0 40px #ffffff;
-  }
-} */
